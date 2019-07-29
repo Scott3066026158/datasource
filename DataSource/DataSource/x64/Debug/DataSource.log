@@ -1,0 +1,81 @@
+﻿生成启动时间为 2019/7/28 21:47:19。
+     1>项目“D:\bintech\13338\DataSource\DataSource\DataSource\DataSource.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\CL.exe /c /I..\third_party\rabbitmq /I..\third_party\mysql\include\ /I..\third_party\mysql\lib\ /Zi /nologo /W3 /WX- /Od /D WIN32 /D _DEBUG /D _CONSOLE /D BUILDING_LIBCURL /D HTTP_ONLY /D _CRT_SECURE_NO_DEPRECATE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc110.pdb" /Gd /TP /errorReport:prompt DataSource.cpp api\CLock.cpp bean\CBean.cpp config\IPConfig.cpp db\RedisDataManager.cpp
+         RedisDataManager.cpp
+         IPConfig.cpp
+         CBean.cpp
+     1>bean\CBean.cpp(40): warning C4101: “isFeeTartget”: 未引用的局部变量
+     1>bean\CBean.cpp(38): warning C4101: “orderID”: 未引用的局部变量
+     1>bean\CBean.cpp(38): warning C4101: “orderStatus”: 未引用的局部变量
+     1>bean\CBean.cpp(38): warning C4101: “targetFee”: 未引用的局部变量
+     1>bean\CBean.cpp(42): warning C4101: “orderState”: 未引用的局部变量
+     1>bean\CBean.cpp(39): warning C4101: “price”: 未引用的局部变量
+     1>bean\CBean.cpp(38): warning C4101: “tradePair”: 未引用的局部变量
+     1>bean\CBean.cpp(39): warning C4101: “orderFee”: 未引用的局部变量
+     1>bean\CBean.cpp(41): warning C4101: “openedVolume”: 未引用的局部变量
+     1>bean\CBean.cpp(40): warning C4101: “orderWay”: 未引用的局部变量
+     1>bean\CBean.cpp(40): warning C4101: “isDealFeeDemand”: 未引用的局部变量
+     1>bean\CBean.cpp(41): warning C4101: “tradedVolume”: 未引用的局部变量
+     1>bean\CBean.cpp(39): warning C4101: “volume”: 未引用的局部变量
+     1>bean\CBean.cpp(37): warning C4101: “errorCode”: 未引用的局部变量
+     1>bean\CBean.cpp(40): warning C4101: “dir”: 未引用的局部变量
+     1>bean\CBean.cpp(39): warning C4101: “timestamp”: 未引用的局部变量
+     1>bean\CBean.cpp(38): warning C4101: “flag”: 未引用的局部变量
+     1>bean\CBean.cpp(38): warning C4101: “traderID”: 未引用的局部变量
+     1>bean\CBean.cpp(79): warning C4996: 'swprintf': swprintf has been changed to conform with the ISO C standard, adding an extra character count parameter. To use traditional Microsoft swprintf, set _CRT_NON_CONFORMING_SWPRINTFS.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\swprintf.inl(85) : 参见“swprintf”的声明
+         CLock.cpp
+         DataSource.cpp
+         正在生成代码...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\bintech\13338\DataSource\DataSource\x64\Debug\DataSource.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /NODEFAULTLIB:owmath.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\bintech\13338\DataSource\DataSource\x64\Debug\DataSource.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /MACHINE:X64 x64\Debug\DataSource.obj
+         x64\Debug\HttpRouter.obj
+         x64\Debug\CurlHttp.obj
+         x64\Debug\HttpGetService.obj
+         x64\Debug\HttpPostService.obj
+         x64\Debug\RabbitmqProducter.obj
+         x64\Debug\stdafx.obj
+         x64\Debug\BaseService.obj
+         x64\Debug\Binary.obj
+         x64\Debug\ClientBaseService.obj
+         x64\Debug\CMessage.obj
+         x64\Debug\MessageListener.obj
+         x64\Debug\NodeService.obj
+         x64\Debug\SocketArray.obj
+         x64\Debug\CBase64.obj
+         x64\Debug\Client.obj
+         x64\Debug\Clients.obj
+         x64\Debug\owsock.obj
+         x64\Debug\Server.obj
+         x64\Debug\Servers.obj
+         x64\Debug\CFile.obj
+         x64\Debug\CLock.obj
+         x64\Debug\CStr.obj
+         x64\Debug\Dump.obj
+         x64\Debug\PublicMethod.obj
+         x64\Debug\RedisHelper.obj
+         x64\Debug\Convert.obj
+         x64\Debug\DataCenter.obj
+         x64\Debug\TraderDataManager.obj
+         x64\Debug\IPConfig.obj
+         x64\Debug\ConnectProxy.obj
+         x64\Debug\Router.obj
+         x64\Debug\TraderQueryService.obj
+         x64\Debug\TraderUpdateService.obj
+         x64\Debug\CBean.obj
+         x64\Debug\MysqlHelper.obj
+         x64\Debug\MysqlHelperPool.obj
+         x64\Debug\RedisDataManager.obj
+         x64\Debug\async.obj
+         x64\Debug\dict.obj
+         x64\Debug\hiredis.obj
+         x64\Debug\net.obj
+         x64\Debug\sds.obj
+         x64\Debug\win32fixes.obj
+         DataSource.vcxproj -> D:\bintech\13338\DataSource\DataSource\x64\Debug\DataSource.exe
+     1>已完成生成项目“D:\bintech\13338\DataSource\DataSource\DataSource\DataSource.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:17.65

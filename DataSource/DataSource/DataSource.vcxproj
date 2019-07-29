@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{23665190-B147-448F-9C83-8AD21DEBEF07}</ProjectGuid>
+    <RootNamespace>DataSource</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.50727.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>..\third_party\rabbitmq;..\third_party;..\third_party\mysql\include;</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <IgnoreSpecificDefaultLibraries>owmath.lib</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\third_party\rabbitmq;..\third_party\mysql\include\;..\third_party\mysql\lib\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;BUILDING_LIBCURL;HTTP_ONLY;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX64</TargetMachine>
+      <IgnoreAllDefaultLibraries>
+      </IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>owmath.lib</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="DataSource.cpp" />
+    <ClCompile Include="middle\HttpRouter.cpp" />
+    <ClCompile Include="owsock\CurlHttp.cpp" />
+    <ClCompile Include="owsock\HttpGetService.cpp" />
+    <ClCompile Include="owsock\HttpPostService.cpp" />
+    <ClCompile Include="rabbitmq\RabbitmqProducter.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="owsock\BaseService.cpp" />
+    <ClCompile Include="owsock\Binary.cpp" />
+    <ClCompile Include="owsock\ClientBaseService.cpp" />
+    <ClCompile Include="owsock\CMessage.cpp" />
+    <ClCompile Include="owsock\MessageListener.cpp" />
+    <ClCompile Include="owsock\NodeService.cpp" />
+    <ClCompile Include="owsock\SocketArray.cpp" />
+    <ClCompile Include="sock\CBase64.cpp" />
+    <ClCompile Include="sock\Client.cpp" />
+    <ClCompile Include="sock\Clients.cpp" />
+    <ClCompile Include="sock\owsock.cpp" />
+    <ClCompile Include="sock\Server.cpp" />
+    <ClCompile Include="sock\Servers.cpp" />
+    <ClCompile Include="api\CFile.cpp" />
+    <ClCompile Include="api\CLock.cpp" />
+    <ClCompile Include="api\CStr.cpp" />
+    <ClCompile Include="api\Dump.cpp" />
+    <ClCompile Include="api\PublicMethod.cpp" />
+    <ClCompile Include="redis\RedisHelper.cpp" />
+    <ClCompile Include="global\Convert.cpp" />
+    <ClCompile Include="global\DataCenter.cpp" />
+    <ClCompile Include="global\TraderDataManager.cpp" />
+    <ClCompile Include="config\IPConfig.cpp" />
+    <ClCompile Include="servers\ConnectProxy.cpp" />
+    <ClCompile Include="middle\Router.cpp" />
+    <ClCompile Include="service\TraderQueryService.cpp" />
+    <ClCompile Include="service\TraderUpdateService.cpp" />
+    <ClCompile Include="bean\CBean.cpp" />
+    <ClCompile Include="db\MysqlHelper.cpp" />
+    <ClCompile Include="db\MysqlHelperPool.cpp" />
+    <ClCompile Include="db\RedisDataManager.cpp" />
+    <ClCompile Include="redis\async.c" />
+    <ClCompile Include="redis\dict.c" />
+    <ClCompile Include="redis\hiredis.c" />
+    <ClCompile Include="redis\net.c" />
+    <ClCompile Include="redis\sds.c" />
+    <ClCompile Include="redis\win32fixes.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="jsonapi\autolink.h" />
+    <ClInclude Include="jsonapi\config.h" />
+    <ClInclude Include="jsonapi\features.h" />
+    <ClInclude Include="jsonapi\forwards.h" />
+    <ClInclude Include="jsonapi\json.h" />
+    <ClInclude Include="jsonapi\reader.h" />
+    <ClInclude Include="jsonapi\value.h" />
+    <ClInclude Include="jsonapi\writer.h" />
+    <ClInclude Include="middle\HttpRouter.h" />
+    <ClInclude Include="owsock\CurlHttp.h" />
+    <ClInclude Include="owsock\HttpGetService.h" />
+    <ClInclude Include="owsock\HttpPostService.h" />
+    <ClInclude Include="rabbitmq\RabbitmqProducter.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="owsock\BaseService.h" />
+    <ClInclude Include="owsock\Binary.h" />
+    <ClInclude Include="owsock\ClientBaseService.h" />
+    <ClInclude Include="owsock\CMessage.h" />
+    <ClInclude Include="owsock\MessageListener.h" />
+    <ClInclude Include="owsock\NodeService.h" />
+    <ClInclude Include="owsock\SocketArray.h" />
+    <ClInclude Include="owsock\winhttp.h" />
+    <ClInclude Include="sock\CBase64.h" />
+    <ClInclude Include="sock\Client.h" />
+    <ClInclude Include="sock\Clients.h" />
+    <ClInclude Include="sock\owsock.h" />
+    <ClInclude Include="sock\Server.h" />
+    <ClInclude Include="sock\Servers.h" />
+    <ClInclude Include="api\CFile.h" />
+    <ClInclude Include="api\CLock.h" />
+    <ClInclude Include="api\CStr.h" />
+    <ClInclude Include="api\Dump.h" />
+    <ClInclude Include="api\PublicMethod.h" />
+    <ClInclude Include="redis\RedisHelper.h" />
+    <ClInclude Include="global\BusinessIDs.h" />
+    <ClInclude Include="global\Convert.h" />
+    <ClInclude Include="global\DataCenter.h" />
+    <ClInclude Include="global\TraderDataManager.h" />
+    <ClInclude Include="config\IPConfig.h" />
+    <ClInclude Include="servers\ConnectProxy.h" />
+    <ClInclude Include="db\MysqlHelper.h" />
+    <ClInclude Include="db\MysqlHelperPool.h" />
+    <ClInclude Include="db\RedisDataManager.h" />
+    <ClInclude Include="redis\async.h" />
+    <ClInclude Include="redis\dict.h" />
+    <ClInclude Include="redis\fmacros.h" />
+    <ClInclude Include="redis\hiredis.h" />
+    <ClInclude Include="redis\net.h" />
+    <ClInclude Include="redis\sds.h" />
+    <ClInclude Include="redis\win32fixes.h" />
+    <ClInclude Include="redis\adapters\ae.h" />
+    <ClInclude Include="redis\adapters\libev.h" />
+    <ClInclude Include="redis\adapters\libevent.h" />
+    <ClInclude Include="middle\Router.h" />
+    <ClInclude Include="service\TraderQueryService.h" />
+    <ClInclude Include="service\TraderUpdateService.h" />
+    <ClInclude Include="bean\CBean.h" />
+    <ClInclude Include="bean\TraderBaseInfo.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
